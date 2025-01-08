@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<head>
+    <style>
+        a {
+          position: relative;
+          color: #FAFAFC;
+          text-decoration: none;
+        }
+
+        a:hover {
+          color: #FAFAFC;
+        }
+        .header{
+            background-color: #333336;
+            width: 100%;
+    
+            
+        }
+        a::before {
+          content: "";
+          position: absolute;
+          display: block;
+          width: 100%;
+          height: 2px;
+          bottom: 0;
+          left: 0;
+          background-color: #FAFAFC;
+          transform: scaleX(0);
+          transition: transform 0.3s ease;
+        }
+        a:hover::before {
+            transform: scaleX(1);
+        }
+        .header2{
+            width: fit-content;
+            margin: auto;
+            height: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        @font-face {
+            font-family: Mont;
+            src: url(SF-Pro-Rounded-Regular.otf);
+        }
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: #FAFAFC
+        }
+        .header_links{
+            font-size: 15px;
+            margin: 50px;
+            font-family: mont;
+            color: #FAFAFC;
+        }
+        h1{
+            font-size: 40px;
+            text-align: center;
+            font-family: mont;
+    
+    
+        }
+        h2{
+            font-size: 30px;
+            font-family: mont;
+        }
+        h3{
+            font-family: mont;
+        }
+        h4{
+            font-family: mont;
+        }
+        h5{
+            font-family: mont;
+        }
+        h6{
+            font-family: mont;
+        }
+        .content{
+            width: 70vw;
+            margin: auto;
+            
+        }
+        table {
+          border-collapse: collapse;
+          border: 2px solid rgb(0, 0, 0);
+          font-family: sans-serif;
+          font-size: 0.8rem;
+          letter-spacing: 1px;
+          font-family: mont;
+
+        }
+
+        caption {
+          caption-side: bottom;
+          padding: 10px;
+          font-family: mont;
+          font-weight: bold;
+        }
+
+        thead,
+        tfoot {
+          background-color: rgb(255, 255, 255);
+          font-family: mont;
+
+        }
+
+        th,
+        td {
+          border: 1px solid rgb(0, 0, 0);
+          font-family: mont;
+          padding: 8px 10px;
+        }
+
+        td:last-of-type {
+          text-align: center;
+          font-family: mont;
+
+        }
+
+        tbody > tr:nth-of-type(even) {
+          background-color: rgb(255, 255, 255);
+          font-family: mont;
+
+        }
+
+        tfoot th {
+          text-align: right;
+          font-family: mont;
+
+        }
+
+        tfoot td {
+          font-weight: bold;
+          font-family: mont;
+
+        }
+        table{
+            align-content: center;
+            margin: 0px auto;
+            font-size:large;
+        }
+
+
+    
+    
+    </style>
+<title>Home</title>
+</head>
+<body>
+    <div class="header">
+        <div class="header2">
+            <a class="header_links" href="index.html">Home</a>
+            <a class="header_links" href="biochemistry.html">Unit 1 - Biochemistry</a>
+            <a class="header_links" href="genetics.html">Unit 2 - Genetics</a>
+            <a class="header_links" href="animals.html">Unit 3 - Animals</a>
+            <a class="header_links" href="evolution.html">Unit 4 - Evolution</a>
+        </div>
+    </div>   
+
+    <div class="content">
+        <h1>Biochemistry</h1>
+        <br>
+        <br>
+        <h3 style="text-align: center;">What exactly goes on inside our bodies, on a molecular level? Biochemistry answers this, giving valuable insight into the chemicals and chemical processes that keep us going every day</h3>
+        <br>
+        <h2>Chemistry in living organisms</h2>
+        <h3>
+            All matter is composed of elements (a substance that cannot be broken down further). Out of the 118 elements that exist, 92 serve as the building blocks of matter. Out of those 92, 6 serve as the chemical foundation for life
+
+            <li>Carbon (underlying structure of biological molecules)</li>
+            <li>Hydrogen (underlying structure of biological molecules)</li>
+            <li>Nitrogen (provide certain properties to biological molecules)</li>
+            <li>Oxygen (provide certain properties to biological molecules)</li>
+            <li>Phosphorus (provide certain properties to biological molecules)</li>
+            <li>Sulfur (provide certain properties to biological molecules)</li>
+            <br>
+            <br>
+            Functional groups are an atom or group of atoms attached to a molecule that give it certain properties. Hydrocarbons are a type of organic molecule made up of only carbon and hydrogen atoms. They have certain properties, such as            
+            <li>Non-polar</li>
+            <li>Low boiling point</li>
+            <li>Flammable</li>
+            <li>Doesn't dissolve in water</li>
+        </h3>
+        <br>
+        <br>
+        <h2>Biochemical reactions</h2>
+        <table style="align-content: center; margin: 0px auto; font-size:large;">
+            <thead>
+                <th>Neutralization</th>
+                <th>Oxidation-reduction</th>
+                <th>Condensation/dehydration</th>
+                <th>Hydrolysis</th>
+            </thead>
+            <tbody>
+                <td>
+                    <li >Acids produce H+ ions when dissolved in water</li>
+                    <li>Bases produce OH- ions when dissolved in water</li>
+                    <li>Acid + base -->neutralization--> salt + water</li>
+                    <li>Your body uses neutralization to maintain specific pH levels within different systems</li>
+                </td>
+                <td>
+                    <li>When molecule loses electron, it becomes <u>oxidized</u></li>
+                    <li>When molecule gains electron from an oxidized electron, it becomes <u>reduced</u></li>
+                </td>
+                <td>
+                    <li>Reaction that <u>releases</u> water</li>
+                    <li>When you combine monomers</li>
+                    <li>Hydrogen atom removed from one monomer, OH removed from another</li>
+                    <li>Forms <u>covalent</u> bond</li>
+                </td>
+                <td>
+                    <li>Opposite of condensation</li>
+                    <li>Breaks polymers into monomers</li>
+                    <li>H and OH added to respective monomers</li>
+                    <li><u>Covalent</u> bond is broken</li>
+                </td>
+            </tbody>
+
+        </table>
+
+        <h2>Macromolecules</h2>
+        <h3>Macromolecules make up living things. Many macromolecules are polymers(string of connected monomers). The main macromolecules are
+            <li>Carbohydrates</li>
+            <li>Lipids</li>
+            <li>Proteins</li>
+            <li>Nucleic Acids</li>
+        </h3>
+        <h2>Carbohydrates</h2>
+        <h3>
+            <li>Contain carbon, hydrogen, and oxygen in a 1:2:1 ratio</li>
+            <li>Polar (dissolve in water)</li>
+            <li>Can range from simple carbs(monosaccharides) to complex carbs(polysaccharides)</li>
+        </h3>
+        <table>
+            <thead>
+                <th>Monosaccharides</th>
+                <th>Disaccharides</th>
+                <th>Polysaccharides</th>
+            </thead>
+            <tbody>
+                <td>
+                    <li>Composed of single carbon based monomer structure</li>
+                    <li>C6H12O6(simple sugar)</li>
+                    <li>3 monosaccharides: glucose, fructose, galactose</li>
+                    <li>These monosaccharides are isomers, meaning they have the same chemical formula, but different structures</li>
+                </td>
+                <td>
+                    <li>2 monosaccharides combined</li>
+                    <li>The covalent bond between the two monosaccharides is called <u>glycosidic linkage</u></li>
+                    <li>An example of a disaccharide is table sugar, which is fructose + glucose</li>
+                </td>
+                <td>
+                    <li>Multiple monosaccharides linked together by glycosidic linkage</li>
+                    <li>Common polysaccharides are starch, glycogen, and cellulose</li>
+                    <li>Glycosidic linkage in cellulose is different from starch and glycogen</li>
+                    <li>This is because the hydroxyl group on carbon 1 of glucose can exist in the alpha or beta position</li>
+                    <li>The alpha position leads to the formation of starch and glycogen, while beta leads to the formation of cellulose</li>
+                    <li>Beta form cannot be broken down by our bodies</li>
+                </td>
+                
+            </tbody>
+
+        </table>
+        <br>
+        <br>
+        <h2>Lipids(fats)</h2>
+        <h3>
+            <li>Made up of CHO</li>
+            <li>Hydrophobic</li>
+            <li>High number of C-H bonds make it effective for energy storage</li>
+            <li>Energy is stored within hydrocarbons, and as a result is less accessible than carbs</li>
+            <li>Different types of lipids are triglycerides, phospholipids, steroids, and waxes</li>
+        </h3>
+
+        <table style="width: 100%;">
+            <thead>
+                <th>Triglycerides</th>
+                <th>Phospholipids</th>
+                <th>Steroids</th>
+                <th>Waxes</th>
+            </thead>
+            <tbody>
+                <td>
+                    <li>Glycerol backbone(hydrophilic) + 3 fatty acids(hydrophobic)</li> 
+                    <li>Hydroxyl group on glycerol backbone bonds to carbon group on fatty acid through <u>ester bond</u>, resulting in an ester functional group</li>  
+                    <li>Fatty acid hydrocarbon chain ends with acidic carboxyl group (COOH). Bonds within this result in either an unsaturated or saturated fatty acid</li>
+                    <li>Saturated fats: Single bond between carbons. Usually solid at room temperature(eg. butter)</li>
+                    <li>Unsaturated fats: Either single double bond(monounsaturated) or multiple double bonds (polyunsaturated). Usually liquid at room temp(eg. oil)</li>
+                    <img style="width: 500px;" src="https://pressbooks.library.vcu.edu/app/uploads/sites/21/2024/07/image4-3.jpg" alt="">
+
+                </td>
+                <td>
+                    <li>Makes up cell membranes</li>
+                    <li>Form lipid bilayer in aqueous environment</li>
+                    <img style="width: 400px" src="https://cdn.kastatic.org/ka-perseus-images/352079e6dc783dce573875198fcb364180b01331.png" alt="">
+
+
+                </td>       
+                <td>
+                    <li>Composed of lipid groups with 4 carbon rings attached to each other</li>
+                    <li>Different arrangement of atoms and functional groups changes the tpe of steroid</li>
+                    <li>Produces hormones within the body, like testosterone and estrogen</li>
+                    <img width="300px" src="https://saylordotorg.github.io/text_the-basics-of-general-organic-and-biological-chemistry/section_20/917ecf7acccf4ccad4680dd6e4313a77.jpg" alt="">
+
+                </td>
+                <td>
+                    <li>Lipids with long carbon chains</li>
+                    <li>Solid at room temperature</li>
+                    <li>Produced by plants and animals</li>
+                </td>
+                     
+            </tbody>
+
+        </table>
+        <br>
+        <br>
+        <h2>Proteins</h2>
+            <h3>
+                <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                    <div>
+                        <li>Made up of amino acid monomers</li>
+                        <li>R side chain group determines distinctive shape and function of respective amino acids</li>
+                        <li>20 amino acids = 20 different R groups</li>
+                        <li>There are 3 main amino groups
+                            <ul>
+                                <li>Non polar groups for hydrophobic amino acids</li>
+                                <li>Polar groups for hydrophilic amino acids</li>
+                                <li>Electrically charged group</li>
+                            </ul>
+                        </li>
+                        <li>Amino acid polarity determined by R group polarity</li>
+                        <li>Amino acids joined by covalent peptide bonds</li>
+                        <li>Multiple amino acids are called polypeptides</li>
+                        <li>Can be denatured(R group bonds broken) and unfold under certain conditions, like heat</li>
+  
+                    </div>
+                    <div>
+                        <img src="https://www.astrochem.org/sci_img/Amino_Acid_Structure.jpg" alt="">
+                    </div>
+                </div>
+            </h3>
+            <br>
+            <br>
+            <h2>Amino Acids</h2>
+            <table>
+                <thead>
+                    <th>Primary Structure</th>
+                    <th>Secondary Structure</th>
+                    <th>Tertiary Structure</th>
+                    <th>Quaternary Structure</th>
+                </thead>
+                <tbody>
+                    <td>
+                        <img style="width: 400px;" src="https://images.nagwa.com/figures/explainers/528127907457/4.svg" alt="">
+                        <li>Sequence of a chain of amino acids</li>
+                        <li>Linear structure</li>
+                        <li>Backbone of polypeptide chain</li>
+                    </td>
+                    <td>
+                        <img style="width: 400px;" src="https://microbenotes.com/wp-content/uploads/2023/10/Secondary-Structure-of-Protein.jpeg" alt="">
+                        <li>Caused by hydrogen bonding</li>
+                        <li>Forms alpha helix or beta pleated sheet</li>
+
+                    </td>
+                    <td>
+                        <img style="width: 400px;" src="https://images.nagwa.com/figures/explainers/528127907457/7.svg" alt="">
+                        <li>Caused by attractions between alpha helix and beta pleated sheets</li>
+                        <li>Caused by different R groups in polypeptide interacting and bonding with each other in aqueous environment</li>
+                        <li>Specific structures determined by hydrophobic effect</li>
+                        <ul>
+                            <li>Polar groups directed to outside of structure</li>
+                            <li>Non polar groups directed to middle of structure</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <li>Proteins with multiple polypeptide chains, these polypeptides are arranged into a fourth level of organization</li>
+        
+                    </td>
+                </tbody>
+
+            </table>
+            <br>
+            <br>
+            <h2>Nucleic Acids</h2>
+            <h3>
+                <li>2 types exist</li>
+                <ul>
+                    <li>DNA - composed of nucleotides containing sugar deoxyribose</li>
+                    <li>RNA - composed of nucleotides containing sugar ribose</li>
+                </ul>
+                <li>nucleotides are organic molecules composed of sugar bonded to a phosphate group + a nitrogen containing base </li>
+                <li>DNA has 4 bases: Adenine-thymine, guanine-cytosine</li>
+                <li>RNA has 4 bases: Adenine-uracil, guanine-cytosine</li>
+                <li>Hydrogen bonds between base pairs</li>
+            </h3>
+            <br>
+            <br>
+            <h2>Enzymes</h2>
+
+    </div>
+
+    
+
+
+</body>
