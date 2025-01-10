@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<head>
+    <style>
+        a {
+          position: relative;
+          color: #FAFAFC;
+          text-decoration: none;
+        }
+
+        a:hover {
+          color: #FAFAFC;
+        }
+        .header{
+            background-color: #333336;
+            width: 100%;
+        }
+        a::before {
+          content: "";
+          position: absolute;
+          display: block;
+          width: 100%;
+          height: 2px;
+          bottom: 0;
+          left: 0;
+          background-color: #FAFAFC;
+          transform: scaleX(0);
+          transition: transform 0.3s ease;
+        }
+        a:hover::before {
+            transform: scaleX(1);
+        }
+        .header2{
+            width: fit-content;
+            margin: auto;
+            height: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        @font-face {
+            font-family: Mont;
+            src: url(SF-Pro-Rounded-Regular.otf);
+        }
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: #FAFAFC
+        }
+        .header_links{
+            font-size: 15px;
+            margin: 50px;
+            font-family: mont;
+            color: #FAFAFC;
+        }
+        h1{
+            font-size: 40px;
+            text-align: center;
+            font-family: mont;
+        }
+        h2{
+            font-size: 30px;
+            font-family: mont;
+        }
+        h3{
+            font-family: mont;
+        }
+        h4{
+            font-family: mont;
+        }
+        h5{
+            font-family: mont;
+        }
+        h6{
+            font-family: mont;
+        }
+        .content{
+            width: 70vw;
+            margin: auto;
+        }
+        table {
+          border-collapse: collapse;
+          border: 2px solid rgb(0, 0, 0);
+          font-family: sans-serif;
+          font-size: 0.8rem;
+          letter-spacing: 1px;
+          font-family: mont;
+        }
+
+        caption {
+          caption-side: bottom;
+          padding: 10px;
+          font-family: mont;
+          font-weight: bold;
+        }
+
+        thead,
+        tfoot {
+          background-color: rgb(255, 255, 255);
+          font-family: mont;
+        }
+
+        th,
+        td {
+          border: 1px solid rgb(0, 0, 0);
+          font-family: mont;
+          padding: 8px 10px;
+        }
+
+        td:last-of-type {
+          text-align: center;
+          font-family: mont;
+        }
+
+        tbody > tr:nth-of-type(even) {
+          background-color: rgb(255, 255, 255);
+          font-family: mont;
+        }
+
+        tfoot th {
+          text-align: right;
+          font-family: mont;
+        }
+
+        tfoot td {
+          font-weight: bold;
+          font-family: mont;
+        }
+        table{
+            align-content: center;
+            margin: 0px auto;
+            font-size:large;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+<title>Population Dynamics</title>
+</head>
+<body>
+    <div class="header">
+        <div class="header2">
+            <a class="header_links" href="index.html">Home</a>
+            <a class="header_links" href="biochemistry.html">Unit 1 - Biochemistry</a>
+            <a class="header_links" href="metabolic_processes.html">Unit 2 - Metabolic Processes</a>
+            <a class="header_links" href="molecular_genetics.html">Unit 3 - Molecular Genetics</a>
+            <a class="header_links" href="homeostasis.html">Unit 4 - Homeostasis</a>
+            <a class="header_links" href="population_dynamics.html">Unit 5 - Population dynamics</a>
+        </div>
+    </div>   
+
+    <div class="content">
+        <h1>Population Dynamics</h1>
+        <br>
+        <br>
+        <h3 style="text-align: center;">Population dynamics is the study of how and why populations change over time. It involves understanding factors like population size, density, growth rates, and interactions between species.</h3>
+        <br>
+        <h2>Population Size and Density</h2>
+        <h3>
+            <li><u>Population Size</u>: The total number of individuals in a population.</li>
+            <li><u>Population Density</u>: The number of individuals per unit area or volume.</li>
+            <li>Formula for Population Density: 
+                <br>
+                <strong>Density = Number of Individuals / Area</strong>
+            </li>
+        </h3>
+        <br>
+        <h2>Sampling Methods</h2>
+        <h3>
+            <li><u>Transects</u>:
+                <div style="display: flex; justify-content: space-between;">
+                <ul>
+                    <li>Used for linear habitats (e.g., along a river or forest edge).</li>
+                    <li>Example: Counting plant species along a line.</li>
+                </ul>
+                <img width="600px" src="https://wormwatch.d.umn.edu/sites/wormwatch.d.umn.edu/files/2021-05/random%20stratification.jpg" alt="">
+                </div>
+            </li>
+            <li><u>Quadrats</u>:
+                <div style="display: flex; justify-content: space-between;">
+                <ul>
+                    <li>Used for stationary organisms (e.g., plants, barnacles).</li>
+                    <li>Example: Counting the number of dandelions in a 1m² square.</li>
+                </ul>
+                <img width="500px" src="https://blog.nhbs.com/wp-content/uploads/2022/05/IMG_20220520_163035-min-scaled.jpg" alt="">
+                </div>
+            </li>
+            <li><u>Mark-Recapture Method</u>:
+                <div style="display: flex; justify-content: space-between;">
+                <ul>
+                    <li>Used for mobile organisms (e.g., deer, fish).</li>
+                    <li>Formula: 
+                        <br>
+                        <strong>Population Size = (Number Marked × Total Recaptured) / Number Recaptured with Marks</strong>
+                    </li>
+                    <li>Example: Marking deer with tags and recapturing them to estimate population size.</li>
+                </ul>
+                <img width="500px" src="https://fishbio.com/wp-content/uploads/2020/08/202007006_Mark-Recapture-diagram-01.jpeg" alt="">
+                </div>
+            </li>
+        </h3>
+        <br>
+        <h2>Population Density Patterns</h2>
+        <h3>
+            <li><u>Clumped</u>: Individuals grouped in patches (e.g., schools of fish).</li>
+            <li><u>Uniform</u>: Evenly spaced individuals (e.g., territorial animals).</li>
+            <li><u>Random</u>: No specific pattern (e.g., wind-dispersed seeds).</li>
+        </h3>
+        <img src="https://cdn.kastatic.org/ka-perseus-images/0ee2b2f9ef46f4adb40dcbcd43655122e8b8b200.png" alt="">
+        <br>
+        <h2>Survivorship and Reproductive Patterns</h2>
+        <h3>
+            <li><u>Fecundity</u>: The potential reproductive capacity of an individual.</li>
+            <li><u>Survivorship</u>: The percentage of individuals surviving to a certain age.</li>
+            <li><u>Survivorship Curves</u>:
+                <div style="display: flex; justify-content: space-between;">
+                <ul>
+                    <li><u>Type I</u>: High survival in early life, rapid decline in old age (e.g., humans).</li>
+                    <li><u>Type II</u>: Constant survival rate throughout life (e.g., birds).</li>
+                    <li><u>Type III</u>: High mortality in early life, few survive to old age (e.g., fish).</li>
+                </ul>
+                <img width="600px" src="https://cdn.britannica.com/42/6542-050-B6E0E2B9/survivorship-curve-II-Type-I-curves-III.jpg" alt="">
+                </div>
+            </li>
+        </h3>
+        <br>
+        <h2>Population Change</h2>
+        <h3>
+            <li>Formula: 
+                <br>
+                <strong>Change in Population = (Births + Immigration) - (Deaths + Emigration)</strong>
+            </li>
+            <li><u>Growth Rate</u>: The rate at which a population increases or decreases over time.</li>
+            <li>Formula: 
+                <br>
+                <strong>Growth Rate = (Births - Deaths) / Initial Population Size</strong>
+            </li>
+        </h3>
+        <br>
+        <h2>Biotic Potential and Carrying Capacity</h2>
+        <h3>
+            <li><u>Biotic Potential</u>: The maximum reproductive capacity of a population under ideal conditions.</li>
+            <li>Influenced by factors like fecundity, lifespan, and age of reproduction.</li>
+            <li><u>Carrying Capacity</u>: The maximum population size an environment can sustain.</li>
+            <li><u>Exponential Growth</u>: Rapid growth in ideal conditions (e.g., bacteria).</li>
+            <img src="https://cdn.kastatic.org/ka-perseus-images/7edbd1ab380efb207cf72aa25850838ef6c05824.png" alt="">
+            <li><u>Logistic Growth</u>: Growth slows as the population approaches carrying capacity (e.g., deer).</li>
+            <img src="https://cdn.kastatic.org/ka-perseus-images/5cbb382cc7a53196a402172da5c2fed32c2134ff.png" alt="">
+        </h3>
+        <br>
+        <h2>r-Selected vs. K-Selected Organisms</h2>
+        <h3>
+            <li><u>r-Selected</u>:
+                <ul>
+                    <li>High reproductive rate, short lifespan, many offspring (e.g., insects).</li>
+                </ul>
+            </li>
+            <li><u>K-Selected</u>:
+                <ul>
+                    <li>Low reproductive rate, long lifespan, few offspring (e.g., elephants).</li>
+                </ul>
+            </li>
+        </h3>
+        <br>
+        <h2>Population Regulation</h2>
+        <h3>
+            <li><u>Density-Independent Factors</u>: Affect populations regardless of density (e.g., natural disasters).</li>
+            <li><u>Density-Dependent Factors</u>: Affect populations based on density (e.g., competition, disease).</li>
+        </h3>
+        <br>
+        <h2>Competition and Resource Partitioning</h2>
+        <h3>
+            <li><u>Intraspecific Competition</u>: Competition within the same species (e.g., deer competing for food).</li>
+            <li><u>Interspecific Competition</u>: Competition between different species (e.g., lions and hyenas).</li>
+            <li><u>Competitive Exclusion Principle</u>: Two species cannot occupy the same niche indefinitely.</li>
+            <li><u>Resource Partitioning</u>: Species divide resources to reduce competition (e.g., birds feeding at different heights).</li>
+        </h3>
+        <br>
+        <h2>Predator-Prey Cycles</h2>
+        <div style="display: flex; justify-content: space-between;">
+        <h3>
+            <li>Predator and prey populations fluctuate in cycles.</li>
+            <li>Example: Lynx and hare populations in the Arctic.</li>
+        </h3>
+        <img width="600px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmWfUaBxsIcT9v3Blujsx5b0wGXEyPbts9HQ&s" alt="">
+        </div>
+        <br>
+        <h2>Defense Mechanisms</h2>
+        <div style="display: flex; justify-content: space-between;">
+        <h3>
+            <li><u>Protective Coloration</u>: Camouflage to blend into the environment (e.g., chameleons).</li>
+            <li><u>Mimicry</u>: Resembling another organism to avoid predation (e.g., harmless snakes mimicking venomous ones).</li>
+        </h3>
+        <div>
+        <img src="https://cdn.britannica.com/76/189276-004-19EC19E1.jpg" alt="" >
+        <caption>Protective Coloration</caption>
+        </div>
+        </div>
+        <br>
+        <h2>Symbiotic Relationships</h2>
+        <h3>
+            <li><u>Parasitism</u>: One organism benefits at the expense of the other (e.g., ticks on dogs).</li>
+            <li><u>Mutualism</u>: Both organisms benefit (e.g., bees and flowers).</li>
+            <li><u>Commensalism</u>: One organism benefits, the other is unaffected (e.g., barnacles on whales).</li>
+        </h3>
+        <br>
+        <h2>Human Population Growth</h2>
+        <h3>
+            <li><u>Demography</u>: The study of human populations.</li>
+            <li>Factors contributing to growth: Advanced medicine, better shelter, improved food production.</li>
+            <li><u>Doubling Time</u>: The time it takes for a population to double in size.</li>
+            <li><u>Ecological Footprint</u>: The impact of human activities on the environment.</li>
+            <li>Examples: Cropland, grazing land, fishing, carbon absorption, building area.</li>
+            <li>Average ecological footprint: 2 hectares per person.</li>
+            <li><u>Biocapacity</u>: The Earth's capacity to regenerate resources.</li>
+            <li>Current biocapacity exceeds carrying capacity due to overexploitation.</li>
+        </h3>
+        <br>
+        <h2>Ecological Concepts</h2>
+        <h3>
+            <li><u>Biomagnification</u>: The increase in concentration of toxins up the food chain.</li>
+            <li><u>Deforestation</u>: The clearing of forests for agriculture or development.</li>
+            <li><u>Sustainability</u>: Meeting current needs without compromising future generations.</li>
+            <li><u>Bycatch</u>: Unintended capture of non-target species during fishing.</li>
+            <li><u>Biodiversity</u>: The variety of life in an ecosystem.</li>
+            <li><u>Overexploitation</u>: Harvesting resources faster than they can regenerate.</li>
+            <li><u>Invasive Species</u>: Non-native species that disrupt ecosystems.</li>
+        </h3>
+    </div>
+</body>
+</html>

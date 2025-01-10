@@ -1,0 +1,306 @@
+<head>
+    <style>
+        a {
+          position: relative;
+          color: #FAFAFC;
+          text-decoration: none;
+        }
+
+        a:hover {
+          color: #FAFAFC;
+        }
+        .header{
+            background-color: #333336;
+            width: 100%;
+        }
+        a::before {
+          content: "";
+          position: absolute;
+          display: block;
+          width: 100%;
+          height: 2px;
+          bottom: 0;
+          left: 0;
+          background-color: #FAFAFC;
+          transform: scaleX(0);
+          transition: transform 0.3s ease;
+        }
+        a:hover::before {
+            transform: scaleX(1);
+        }
+        .header2{
+            width: fit-content;
+            margin: auto;
+            height: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        @font-face {
+            font-family: Mont;
+            src: url(SF-Pro-Rounded-Regular.otf);
+        }
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: #FAFAFC
+        }
+        .header_links{
+            font-size: 15px;
+            margin: 50px;
+            font-family: mont;
+            color: #FAFAFC;
+        }
+        h1{
+            font-size: 40px;
+            text-align: center;
+            font-family: mont;
+        }
+        h2{
+            font-size: 30px;
+            font-family: mont;
+        }
+        h3{
+            font-family: mont;
+        }
+        h4{
+            font-family: mont;
+        }
+        h5{
+            font-family: mont;
+        }
+        h6{
+            font-family: mont;
+        }
+        .content{
+            width: 70vw;
+            margin: auto;
+        }
+        table {
+          border-collapse: collapse;
+          border: 2px solid rgb(0, 0, 0);
+          font-family: sans-serif;
+          font-size: 0.8rem;
+          letter-spacing: 1px;
+          font-family: mont;
+        }
+
+        caption {
+          caption-side: bottom;
+          padding: 10px;
+          font-family: mont;
+          font-weight: bold;
+        }
+
+        thead,
+        tfoot {
+          background-color: rgb(255, 255, 255);
+          font-family: mont;
+        }
+
+        th,
+        td {
+          border: 1px solid rgb(0, 0, 0);
+          font-family: mont;
+          padding: 8px 10px;
+        }
+
+        td:last-of-type {
+          text-align: center;
+          font-family: mont;
+        }
+
+        tbody > tr:nth-of-type(even) {
+          background-color: rgb(255, 255, 255);
+          font-family: mont;
+        }
+
+        tfoot th {
+          text-align: right;
+          font-family: mont;
+        }
+
+        tfoot td {
+          font-weight: bold;
+          font-family: mont;
+        }
+        table{
+            align-content: center;
+            margin: 0px auto;
+            font-size:large;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+<title>Metabolic Processes</title>
+</head>
+<body>
+    <div class="header">
+        <div class="header2">
+            <a class="header_links" href="index.html">Home</a>
+            <a class="header_links" href="biochemistry.html">Unit 1 - Biochemistry</a>
+            <a class="header_links" href="metabolic_processes.html">Unit 2 - Metabolic Processes</a>
+            <a class="header_links" href="molecular_genetics.html">Unit 3 - Molecular Genetics</a>
+            <a class="header_links" href="homeostasis.html">Unit 4 - Homeostasis</a>
+            <a class="header_links" href="population_dynamics.html">Unit 5 - Population dynamics</a>
+        </div>
+    </div>   
+
+    <div class="content">
+        <h1>Metabolic Processes</h1>
+        <br>
+        <br>
+        <h3 style="text-align: center;">Metabolism is the set of life-sustaining chemical reactions in organisms. It includes catabolic (breaking down) and anabolic (building up) processes that convert energy and molecules for cellular functions.</h3>
+        <br>
+        <h2>Metabolic Pathways</h2>
+        <h3>
+            <li>Metabolic pathways are series of chemical reactions occurring within a cell.</li>
+            <li>They are categorized into <u>catabolic</u> (breaking down molecules to release energy) and <u>anabolic</u> (using energy to build complex molecules).</li>
+            <li>Examples include glycolysis, Krebs cycle, and oxidative phosphorylation.</li>
+        </h3>
+        <br>
+        <h2>Bond Energies: Catabolism and Anabolism</h2>
+        <h3>
+            <li><u>Catabolism</u>: Breaks down complex molecules into simpler ones, releasing energy stored in chemical bonds (e.g., glucose → CO₂ + H₂O + ATP).</li>
+            <li><u>Anabolism</u>: Uses energy to build complex molecules from simpler ones (e.g., amino acids → proteins).</li>
+        </h3>
+        <br>
+        <h2>Open and Closed Systems</h2>
+        <h3>
+            <li><u>Open systems</u>: Exchange both energy and matter with their surroundings (e.g., living organisms).</li>
+            <li><u>Closed systems</u>: Exchange only energy with their surroundings (e.g., a sealed terrarium).</li>
+        </h3>
+        <br>
+        <h2>Endergonic and Exergonic Reactions</h2>
+        <h3>
+            <li><u>Endergonic reactions</u>: Require energy input (e.g., photosynthesis).</li>
+            <li><u>Exergonic reactions</u>: Release energy (e.g., cellular respiration).</li>
+        </h3>
+        <br>
+        <h2>Coupled Reactions</h2>
+        <h3>
+            <li>Energy released from exergonic reactions drives endergonic reactions.</li>
+            <li>Example: ATP hydrolysis (exergonic) powers muscle contraction (endergonic).</li>
+        </h3>
+        <br>
+        <h2>Glycolysis</h2>
+        <div style="display: flex; justify-content: space-between;">
+          <h3>
+              <li>Occurs in the cytoplasm.</li>
+              <li>Breaks down glucose (6C) into 2 pyruvate (3C) molecules.</li>
+              <li>Net gain: 2 ATP and 2 NADH.</li>
+              <li>Does not require oxygen (anaerobic).</li>
+          </h3>
+          <img src="https://www.unm.edu/~lkravitz/Extras6/Glyc19aaa.gif" alt="">
+        </div>
+        <br>
+        <h2>Pyruvate Oxidation</h2>
+          <div style="display: flex; justify-content: space-between;">
+            <h3>
+                <li>Occurs in the mitochondrial matrix.</li>
+                <li>Pyruvate is converted into acetyl-CoA, releasing CO₂ and producing NADH.</li>
+            </h3>
+            <img src="https://i.sstatic.net/w2T6M.png" alt="">
+          </div>
+        <br>
+        <h2>Krebs Cycle (Citric Acid Cycle)</h2>
+        <div style="display: flex; justify-content: space-between;">
+        <h3>
+            <li>Occurs in the mitochondrial matrix.</li>
+            <li>Acetyl-CoA enters the cycle, producing ATP, NADH, FADH₂, and CO₂.</li>
+            <li>Net gain per glucose: 2 ATP, 6 NADH, 2 FADH₂.</li>
+        </h3>
+        <img style="width: 600px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Citric_acid_cycle_with_aconitate_2.svg/800px-Citric_acid_cycle_with_aconitate_2.svg.png" alt="">
+        </div>
+        <br>
+        <h2>Electron Transport Chain (ETC)</h2>
+        <div style="display: flex; justify-content: space-between;">
+        <h3>
+            <li>Occurs in the inner mitochondrial membrane.</li>
+            <li>NADH and FADH₂ donate electrons, which pass through protein complexes, creating a proton gradient.</li>
+            <li>Oxygen is the final electron acceptor, forming water.</li>
+        </h3>
+        <img style="width: 600px;" src="https://cdn.kastatic.org/ka-perseus-images/62120415688fc64d57237535d282247e981bdfed.png" alt="">
+        </div>
+        <br>
+        <h2>Chemiosmosis</h2>
+        <h3>
+            <li>Protons flow back into the mitochondrial matrix through ATP synthase, driving ATP production.</li>
+            <li>Net gain: ~28-34 ATP per glucose molecule.</li>
+        </h3>
+        <br>
+        
+        <h2>Fermentation</h2>
+        <div style="display: flex; justify-content: space-between;">
+        <h3>
+            <li>Occurs in the absence of oxygen (anaerobic).</li>
+            <li>Regenerates NAD⁺ for glycolysis.</li>
+            <li>Types:
+                <ul>
+                    <li><u>Lactic acid fermentation</u>: Pyruvate → lactate (e.g., in muscles).</li>
+                    <li><u>Alcoholic fermentation</u>: Pyruvate → ethanol + CO₂ (e.g., in yeast).</li>
+                </ul>
+            </li>
+        </h3>
+        <img src="https://kaiserscience.wordpress.com/wp-content/uploads/2021/11/lactic-acid-and-alcoholic-fermentation-anaerobic-pyruvic-acid.png" alt="">
+        </div>
+        <br>
+        <h2>Photosynthesis</h2>
+        <h3>
+            <li>Occurs in chloroplasts of plant cells.</li>
+            <li>Converts light energy into chemical energy (glucose).</li>
+            <li>Equation: 6CO₂ + 6H₂O + light energy → C₆H₁₂O₆ + 6O₂.</li>
+        </h3>
+        <br>
+        <h3>Structure of a Plant</h3>
+        <div style="display: flex; justify-content: space-between;">
+        <h3>
+            <li><u>Stomata</u>: Pores on leaves for gas exchange.</li>
+            <li><u>Thylakoid</u>: Membrane-bound compartments in chloroplasts where light-dependent reactions occur.</li>
+            <li><u>Grana</u>: Stacks of thylakoids.</li>
+        </h3>
+        <img src="https://www.sciencenewsforstudents.org/wp-content/uploads/2020/10/680_photosynthesis_explainer_diagram_rev.jpg" alt="">
+        </div>
+        <br>
+        <h3>Light Absorption and Chlorophyll</h3>
+        <h3>
+            <li>Chlorophyll absorbs light (mainly blue and red wavelengths).</li>
+            <li>Accessory pigments (e.g., carotenoids) capture additional light energy.</li>
+        </h3>
+        <br>
+        <h3>Light-Dependent Reactions</h3>
+        <div style="display: flex; justify-content: space-between;">
+        <h3>
+            <li>Occur in the thylakoid membrane.</li>
+            <li>Produce ATP and NADPH using light energy.</li>
+            <li>Involve Photosystem II and Photosystem I.</li>
+            <li>Cyclic vs. Non-cyclic photophosphorylation:
+                <ul>
+                    <li><u>Non-cyclic</u>: Produces ATP, NADPH, and O₂.</li>
+                    <li><u>Cyclic</u>: Produces only ATP.</li>
+                </ul>
+            </li>
+        </h3>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/49/Thylakoid_membrane_3.svg" alt="">
+        </div>
+        <br>
+        <h3>Light-Independent Reactions (Calvin Cycle)</h3>
+        <div style="display: flex; justify-content: space-between;">
+        <h3>
+            <li>Occur in the stroma of chloroplasts.</li>
+            <li>Use ATP and NADPH to fix CO₂ into glucose.</li>
+            <li>Steps: Carbon fixation, reduction, and regeneration of RuBP.</li>
+        </h3>
+        <img style="width: 600px;" src="https://bio.libretexts.org/@api/deki/files/1103/Figure_08_03_02f.png?revision=1" alt="">
+        </div>
+        <br>
+        <h3>C₄ vs. C₃ Plants</h3>
+        <h3>
+            <li><u>C₃ plants</u>: Use the Calvin cycle directly; efficient in moderate conditions.</li>
+            <li><u>C₄ plants</u>: Adapt to hot, dry climates by separating CO₂ fixation and the Calvin cycle spatially.</li>
+        </h3>
+    </div>
+</body>
+</html>

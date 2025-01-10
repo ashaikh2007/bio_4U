@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<head>
+    <style>
+        a {
+          position: relative;
+          color: #FAFAFC;
+          text-decoration: none;
+        }
+
+        a:hover {
+          color: #FAFAFC;
+        }
+        .header{
+            background-color: #333336;
+            width: 100%;
+        }
+        a::before {
+          content: "";
+          position: absolute;
+          display: block;
+          width: 100%;
+          height: 2px;
+          bottom: 0;
+          left: 0;
+          background-color: #FAFAFC;
+          transform: scaleX(0);
+          transition: transform 0.3s ease;
+        }
+        a:hover::before {
+            transform: scaleX(1);
+        }
+        .header2{
+            width: fit-content;
+            margin: auto;
+            height: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        @font-face {
+            font-family: Mont;
+            src: url(SF-Pro-Rounded-Regular.otf);
+        }
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: #FAFAFC
+        }
+        .header_links{
+            font-size: 15px;
+            margin: 50px;
+            font-family: mont;
+            color: #FAFAFC;
+        }
+        h1{
+            font-size: 40px;
+            text-align: center;
+            font-family: mont;
+        }
+        h2{
+            font-size: 30px;
+            font-family: mont;
+        }
+        h3{
+            font-family: mont;
+        }
+        h4{
+            font-family: mont;
+        }
+        h5{
+            font-family: mont;
+        }
+        h6{
+            font-family: mont;
+        }
+        .content{
+            width: 70vw;
+            margin: auto;
+        }
+        table {
+          border-collapse: collapse;
+          border: 2px solid rgb(0, 0, 0);
+          font-family: sans-serif;
+          font-size: 0.8rem;
+          letter-spacing: 1px;
+          font-family: mont;
+        }
+
+        caption {
+          caption-side: bottom;
+          padding: 10px;
+          font-family: mont;
+          font-weight: bold;
+        }
+
+        thead,
+        tfoot {
+          background-color: rgb(255, 255, 255);
+          font-family: mont;
+        }
+
+        th,
+        td {
+          border: 1px solid rgb(0, 0, 0);
+          font-family: mont;
+          padding: 8px 10px;
+        }
+
+        td:last-of-type {
+          text-align: center;
+          font-family: mont;
+        }
+
+        tbody > tr:nth-of-type(even) {
+          background-color: rgb(255, 255, 255);
+          font-family: mont;
+        }
+
+        tfoot th {
+          text-align: right;
+          font-family: mont;
+        }
+
+        tfoot td {
+          font-weight: bold;
+          font-family: mont;
+        }
+        table{
+            align-content: center;
+            margin: 0px auto;
+            font-size:large;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+<title>Homeostasis</title>
+</head>
+<body>
+    <div class="header">
+        <div class="header2">
+            <a class="header_links" href="index.html">Home</a>
+            <a class="header_links" href="biochemistry.html">Unit 1 - Biochemistry</a>
+            <a class="header_links" href="metabolic_processes.html">Unit 2 - Metabolic Processes</a>
+            <a class="header_links" href="molecular_genetics.html">Unit 3 - Molecular Genetics</a>
+            <a class="header_links" href="homeostasis.html">Unit 4 - Homeostasis</a>
+            <a class="header_links" href="population_dynamics.html">Unit 5 - Population dynamics</a>
+        </div>
+    </div>   
+
+    <div class="content">
+        <h1>Homeostasis</h1>
+        <br>
+        <br>
+        <h3 style="text-align: center;">Homeostasis is the process by which living organisms maintain a stable internal environment despite changes in external conditions. This balance is achieved through complex interactions between the nervous system, endocrine system, and various feedback mechanisms.</h3>
+        <br>
+        <h2>Feedback Loops</h2>
+        <div style="display: flex; justify-content: space-between;">
+        <h3>
+            <li><u>Negative Feedback Loops</u>:
+                <ul>
+                    <li>Counteract changes to maintain stability.</li>
+                    <li>Example: Thermoregulation (body temperature control).</li>
+                </ul>
+            </li>
+            <li><u>Positive Feedback Loops</u>:
+                <ul>
+                    <li>Amplify changes to complete a process.</li>
+                    <li>Example: Oxytocin release during childbirth.</li>
+                </ul>
+            </li>
+        </h3>
+        <img src="https://cdn.kastatic.org/ka-perseus-images/8528b0149aa08e36c0305fb9f259949d5984950d.png" alt="">
+        </div>
+        <br>
+        <h2>Endocrine System</h2>
+        <div style="display: flex; justify-content: space-between;">
+        <h3>
+            <li>Regulates bodily functions through hormones.</li>
+            <li><u>Exclusive Endocrine Glands</u>:
+                <ul>
+                    <li>Pituitary gland</li>
+                    <li>Thyroid gland</li>
+                    <li>Adrenal glands</li>
+                </ul>
+            </li>
+            <li><u>Multifunctional Glands</u>:
+                <ul>
+                    <li>Pancreas (endocrine and exocrine functions)</li>
+                    <li>Gonads (testes and ovaries)</li>
+                </ul>
+            </li>
+            <li><u>Target Cells and Receptor Proteins</u>:
+                <ul>
+                    <li>Hormones bind to specific receptors on target cells to trigger responses.</li>
+                </ul>
+            </li>
+        </h3>
+        <img src="https://www.epa.gov/sites/default/files/styles/medium/public/2015-08/endocrine-system.jpg?itok=8pyWl80t" alt="">
+        </div>
+        <br>
+        <h2>Steroid vs. Water-Soluble Hormones</h2>
+        <table>
+            <thead>
+                <th>Steroid Hormones</th>
+                <th>Water-Soluble Hormones</th>
+            </thead>
+            <tbody>
+                <td>
+                    <li>Lipid-based (derived from cholesterol).</li>
+                    <li>Examples: Testosterone, estrogen, cortisol.</li>
+                    <li>Diffuse across the lipid bilayer of cell membranes.</li>
+                    <li>Bind to intracellular receptors to affect gene expression.</li>
+                </td>
+                <td>
+                    <li>Amino acid-based (e.g., peptides, proteins).</li>
+                    <li>Examples: Insulin, adrenaline, growth hormone.</li>
+                    <li>Bind to receptor proteins on the cell surface.</li>
+                    <li>Trigger secondary messengers (e.g., cAMP) to initiate cellular responses.</li>
+                </td>
+            </tbody>
+        </table>
+        <br>
+        <h2>Hypothalamus and Pituitary Gland</h2>
+        <h3>
+            <li>The hypothalamus produces releasing and inhibiting hormones that regulate the pituitary gland.</li>
+            <li><u>Tropic Hormones</u>: Hormones that stimulate other endocrine glands (e.g., TSH, ACTH).</li>
+            <li><u>Pituitary Gland</u>:
+                <ul>
+                    <li><u>Anterior Pituitary</u>:
+                        <ul>
+                            <li>Produces hormones like growth hormone (GH), thyroid-stimulating hormone (TSH), and adrenocorticotropic hormone (ACTH).</li>
+                        </ul>
+                    </li>
+                    <li><u>Posterior Pituitary</u>:
+                        <ul>
+                            <li>Stores and releases hormones produced by the hypothalamus (e.g., oxytocin, antidiuretic hormone (ADH)).</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </h3>
+        <br>
+        <h2>Thyroid Gland</h2>
+        <div style="display: flex; justify-content: space-between;">
+        <h3>
+            <li>Located in the neck, below the larynx.</li>
+            <li>Produces thyroid hormones (T3 and T4) that regulate metabolism.</li>
+            <li><u>Conditions</u>:
+                <ul>
+                    <li><u>Hypothyroidism</u>: Underactive thyroid, causing fatigue and weight gain.</li>
+                    <li><u>Hyperthyroidism</u>: Overactive thyroid, causing weight loss and anxiety.</li>
+                    <li><u>Graves' Disease</u>: Autoimmune disorder causing hyperthyroidism.</li>
+                </ul>
+            </li>
+        </h3>
+        <img style="width: 600px;" src="https://my.clevelandclinic.org/-/scassets/images/org/health/articles/23188-thyroid-2" alt="">
+        </div>
+        <br>
+        <h2>Adrenal Glands</h2>
+        <div style="display: flex; justify-content: space-between;">
+        <h3>
+            <li>Located on top of the kidneys.</li>
+            <li><u>Adrenal Medulla</u>:
+                <ul>
+                    <li>Produces adrenaline and noradrenaline for short-term stress response (fight or flight).</li>
+                </ul>
+            </li>
+            <li><u>Adrenal Cortex</u>:
+                <ul>
+                    <li><u>Glucocorticoids</u> (e.g., cortisol): Regulate blood sugar and long-term stress response.</li>
+                    <li><u>Mineralocorticoids</u> (e.g., aldosterone): Regulate electrolyte balance.</li>
+                    <li><u>Gonadocorticoids</u> (e.g., androgens): Influence secondary sexual characteristics.</li>
+                </ul>
+            </li>
+        </h3>
+        <img style="width: 600px;" src="https://nci-media.cancer.gov/pdq/media/images/739009.jpg" alt="">
+        </div>
+        <br>
+        <h2>Puberty and Reproductive Hormones</h2>
+        <h3>
+            <li>The hypothalamus produces gonadotropin-releasing hormone (GnRH), which stimulates the release of FSH and LH from the pituitary.</li>
+            <li><u>In Females</u>:
+                <ul>
+                    <li>FSH promotes the development of ovarian follicles.</li>
+                    <li>LH triggers ovulation and stimulates estrogen and progesterone production.</li>
+                </ul>
+            </li>
+            <li><u>In Males</u>:
+                <ul>
+                    <li>FSH stimulates sperm production.</li>
+                    <li>LH promotes testosterone production.</li>
+                </ul>
+            </li>
+        </h3>
+        <br>
+        <h2>Menstrual Cycle</h2>
+        <div style="display: flex; justify-content: space-between;">
+        <h3>
+            <li><u>Follicular Phase</u>:
+                <ul>
+                    <li>FSH stimulates follicle growth in the ovaries.</li>
+                    <li>Estrogen levels rise, thickening the uterine lining.</li>
+                </ul>
+            </li>
+            <li><u>Luteal Phase</u>:
+                <ul>
+                    <li>LH triggers ovulation (release of an egg).</li>
+                    <li>The corpus luteum produces progesterone to maintain the uterine lining.</li>
+                </ul>
+            </li>
+        </h3>
+        <img style="width: 800px;" src="https://www.yourhormones.info/media/1131/menstural-cycle.png" alt="">
+        </div>
+        <br>
+        <h2>Nervous System</h2>
+        <div style="display: flex; justify-content: space-between;">
+        <h3>
+            <li><u>Peripheral Nervous System (PNS)</u>:
+                <ul>
+                    <li><u>Somatic System</u>: Controls voluntary movements.</li>
+                    <li><u>Autonomic System</u>:
+                        <ul>
+                            <li><u>Sympathetic</u>: Activates fight or flight response.</li>
+                            <li><u>Parasympathetic</u>: Promotes rest and digestion.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><u>Neurons</u>:
+                <ul>
+                    <li>Composed of dendrites (receive signals), cell body, and axon (transmits signals).</li>
+                    <li>Glial cells support and protect neurons.</li>
+                </ul>
+            </li>
+            <li><u>Reflex Arc</u>:
+                <ul>
+                    <li>Sensory neurons detect stimuli and send signals to interneurons in the spinal cord.</li>
+                    <li>Motor neurons carry signals to muscles, causing a reflex action.</li>
+                </ul>
+            </li>
+        </h3>
+        <img style="width: 600px;" src="https://post.healthline.com/wp-content/uploads/2022/01/1932990_An-Easy-Guide-To-Neurons-01.jpg" alt="">
+        </div>
+        <br>
+        <h2>Kidney Function</h2>
+        <div style="display: flex; justify-content: space-between;">
+        <h3>
+            <li>The kidneys filter blood to produce urine, removing waste and regulating electrolytes.</li>
+            <li><u>Structure</u>:
+                <ul>
+                    <li>Nephrons are the functional units of the kidney.</li>
+                    <li>Blood enters the glomerulus, where filtration occurs.</li>
+                    <li>Filtered fluid passes through the proximal tubule, loop of Henle, distal tubule, and collecting duct.</li>
+                </ul>
+            </li>
+            <li><u>Hormones</u>:
+                <ul>
+                    <li>Antidiuretic hormone (ADH) regulates water reabsorption.</li>
+                    <li>Aldosterone regulates sodium and potassium balance.</li>
+                </ul>
+            </li>
+        </h3>
+        <img style="width: 500px;" src="https://www.researchgate.net/profile/Filippo-Massa/publication/281602804/figure/fig1/AS:664913114591234@1535539048491/Anatomical-structure-of-the-kidney-A-Macroscopical-representation-of-kidneys-and-their_Q320.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>

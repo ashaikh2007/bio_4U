@@ -1,0 +1,373 @@
+<head>
+    <style>
+        a {
+          position: relative;
+          color: #FAFAFC;
+          text-decoration: none;
+        }
+
+        a:hover {
+          color: #FAFAFC;
+        }
+        .header{
+            background-color: #333336;
+            width: 100%;
+        }
+        a::before {
+          content: "";
+          position: absolute;
+          display: block;
+          width: 100%;
+          height: 2px;
+          bottom: 0;
+          left: 0;
+          background-color: #FAFAFC;
+          transform: scaleX(0);
+          transition: transform 0.3s ease;
+        }
+        a:hover::before {
+            transform: scaleX(1);
+        }
+        .header2{
+            width: fit-content;
+            margin: auto;
+            height: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        @font-face {
+            font-family: Mont;
+            src: url(SF-Pro-Rounded-Regular.otf);
+        }
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: #FAFAFC
+        }
+        .header_links{
+            font-size: 15px;
+            margin: 50px;
+            font-family: mont;
+            color: #FAFAFC;
+        }
+        h1{
+            font-size: 40px;
+            text-align: center;
+            font-family: mont;
+        }
+        h2{
+            font-size: 30px;
+            font-family: mont;
+        }
+        h3{
+            font-family: mont;
+        }
+        h4{
+            font-family: mont;
+        }
+        h5{
+            font-family: mont;
+        }
+        h6{
+            font-family: mont;
+        }
+        .content{
+            width: 70vw;
+            margin: auto;
+        }
+        table {
+          border-collapse: collapse;
+          border: 2px solid rgb(0, 0, 0);
+          font-family: sans-serif;
+          font-size: 0.8rem;
+          letter-spacing: 1px;
+          font-family: mont;
+        }
+
+        caption {
+          caption-side: bottom;
+          padding: 10px;
+          font-family: mont;
+          font-weight: bold;
+        }
+
+        thead,
+        tfoot {
+          background-color: rgb(255, 255, 255);
+          font-family: mont;
+        }
+
+        th,
+        td {
+          border: 1px solid rgb(0, 0, 0);
+          font-family: mont;
+          padding: 8px 10px;
+        }
+
+        td:last-of-type {
+          text-align: center;
+          font-family: mont;
+        }
+
+        tbody > tr:nth-of-type(even) {
+          background-color: rgb(255, 255, 255);
+          font-family: mont;
+        }
+
+        tfoot th {
+          text-align: right;
+          font-family: mont;
+        }
+
+        tfoot td {
+          font-weight: bold;
+          font-family: mont;
+        }
+        table{
+            align-content: center;
+            margin: 0px auto;
+            font-size:large;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+<title>Genetics</title>
+</head>
+<body>
+    <div class="header">
+        <div class="header2">
+            <a class="header_links" href="index.html">Home</a>
+            <a class="header_links" href="biochemistry.html">Unit 1 - Biochemistry</a>
+            <a class="header_links" href="metabolic_processes.html">Unit 2 - Metabolic Processes</a>
+            <a class="header_links" href="molecular_genetics.html">Unit 3 - Molecular Genetics</a>
+            <a class="header_links" href="homeostasis.html">Unit 4 - Homeostasis</a>
+            <a class="header_links" href="population_dynamics.html">Unit 5 - Population dynamics</a>
+        </div>
+    </div>   
+
+    <div class="content">
+        <h1>Molecular Genetics</h1>
+        <br>
+        <br>
+        <h3 style="text-align: center;">Genetics is the study of genes, heredity, and genetic variation in living organisms. It explains how traits are passed from parents to offspring and how genetic information is expressed and regulated.</h3>
+        <br>
+        <h2>Genetic Material</h2>
+        <h3>
+            <li>Genetic material is the molecule that carries genetic information in all living organisms.</li>
+            <li>In most organisms, this material is DNA (deoxyribonucleic acid).</li>
+            <li>DNA is organized into structures called chromosomes.</li>
+        </h3>
+        <br>
+        <h2>Chromosomes</h2>
+        <div style="display: flex; justify-content: space-between;">
+            <h3>
+                <li>Chromosomes are thread-like structures made of DNA and proteins.</li>
+                <li>They carry genes, which are segments of DNA that code for specific traits.</li>
+                <li>Humans have 46 chromosomes (23 pairs).</li>
+                <li>Chromosomes are made up of chromatin, which consists of DNA wrapped around histone proteins.</li>
+            </h3>
+            <img style="width: 800px;" src="https://www.genome.gov/sites/default/files/media/images/2022-05/Histone.jpg" alt="">
+        </div>
+        <br>
+        <h2>Nucleic Acids</h2>
+        <div style="display: flex; justify-content: space-between;">
+            <h3>
+                <li>Nucleic acids (DNA and RNA) are made up of nucleotides.</li>
+                <li>Each nucleotide consists of:
+                    <ul>
+                        <li>A sugar (deoxyribose in DNA, ribose in RNA).</li>
+                        <li>A phosphate group.</li>
+                        <li>A nitrogenous base (A, T, C, G in DNA; A, U, C, G in RNA).</li>
+                    </ul>
+                </li>
+                <li>Base pairing in DNA: Adenine (A) pairs with Thymine (T), and Cytosine (C) pairs with Guanine (G).</li>
+                <li>Base pairing in RNA: Adenine (A) pairs with Uracil (U), and Cytosine (C) pairs with Guanine (G).</li>
+            </h3>
+            <img src="https://passel2.unl.edu/image.php?uuid=8117f98cfa34&extension=png&display=MEDIUM&v=1709820534" alt="">
+        </div>
+        <br>
+        <h2>Prokaryotic vs. Eukaryotic Cells</h2>
+        <h3>
+            <li><u>Prokaryotic cells</u>:
+                <ul>
+                    <li>No nucleus; DNA is stored in the nucleoid region.</li>
+                    <li>Single circular chromosome.</li>
+                    <li>May contain plasmids (small, circular DNA molecules).</li>
+                    <li>Haploid (one set of chromosomes).</li>
+                </ul>
+            </li>
+            <li><u>Eukaryotic cells</u>:
+                <ul>
+                    <li>DNA is stored in the nucleus.</li>
+                    <li>Multiple linear chromosomes.</li>
+                    <li>Diploid (two sets of chromosomes).</li>
+                    <li>Use topoisomerase to relieve DNA supercoiling.</li>
+                </ul>
+            </li>
+        </h3>
+        <br>
+        <h2>History of Genetics</h2>
+        <h3>
+            <li><u>Frederick Griffith (1928)</u>: Discovered the "transforming principle" in bacteria. He found that a non-virulent strain of bacteria could become virulent when exposed to heat-killed virulent bacteria, suggesting the transfer of genetic material.</li>
+            <li><u>Avery, MacLeod, and McCarty (1944)</u>: Identified DNA as the transforming material in Griffith's experiment. They demonstrated that DNA, not proteins, was responsible for genetic transformation.</li>
+            <li><u>Erwin Chargaff (1950)</u>: Discovered base pairing rules (A=T, C=G). His work showed that the amount of adenine equals thymine and cytosine equals guanine in DNA, laying the foundation for the double-helix model.</li>
+            <li><u>Rosalind Franklin (1952)</u>: Produced X-ray diffraction images of DNA, revealing its helical structure. Her work was critical to understanding the physical structure of DNA.</li>
+            <li><u>Watson and Crick (1953)</u>: Proposed the double-helix model of DNA based on Franklin's images and Chargaff's rules. Their model explained how DNA replicates and stores genetic information.</li>
+        </h3>
+        <br>
+        <h2>Modern DNA Model</h2>
+        <div style="display: flex; justify-content: space-between;">
+        <h3>
+            <li>DNA is a double helix made of two antiparallel strands.</li>
+            <li>The strands are held together by hydrogen bonds between complementary bases.</li>
+            <li>The backbone is made of sugar-phosphate groups.</li>
+        </h3>
+        <img src="https://cdn.kastatic.org/ka-perseus-images/c1791d0dd3e3ea5fa47b06b275898e5b57807036.png" alt="">
+        </div>
+        <br>
+        <h2>DNA Replication</h2>
+        <div style="display: flex; justify-content: space-between;">
+        <h3>
+            <li>DNA replication is semi-conservative (each new DNA molecule has one old and one new strand).</li>
+            <li><u>Phases</u>:
+                <ul>
+                    <li><u>Initiation</u>:
+                        <ul>
+                            <li>DNA unwinds at the origin of replication.</li>
+                            <li>Helicase enzyme separates the two DNA strands, creating a replication fork.</li>
+                            <li>Single-strand binding proteins stabilize the unwound strands.</li>
+                            <li>Primase synthesizes a short RNA primer to provide a starting point for DNA polymerase.</li>
+                        </ul>
+                    </li>
+                    <li><u>Elongation</u>:
+                        <ul>
+                            <li>DNA polymerase adds nucleotides to the growing strand in the 5' to 3' direction.</li>
+                            <li>Leading strand is synthesized continuously.</li>
+                            <li>Lagging strand is synthesized discontinuously in short segments called Okazaki fragments.</li>
+                            <li>DNA ligase joins Okazaki fragments to form a continuous strand.</li>
+                        </ul>
+                    </li>
+                    <li><u>Termination</u>:
+                        <ul>
+                            <li>Replication ends when the entire DNA molecule is copied.</li>
+                            <li>Telomerase enzyme extends the ends of linear chromosomes to prevent loss of genetic information.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </h3>
+        <img width="1200px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/DNA_replication_en.svg/600px-DNA_replication_en.svg.png" alt="">
+        </div>
+        <br>
+        <h2>Transcription</h2>
+        <div style="display: flex; justify-content: space-between;">
+        <h3>
+            <li>Transcription is the process of copying DNA into mRNA.</li>
+            <li><u>Phases</u>:
+                <ul>
+                    <li><u>Initiation</u>:
+                        <ul>
+                            <li>RNA polymerase binds to the promoter region of DNA.</li>
+                            <li>Transcription factors help RNA polymerase recognize the promoter.</li>
+                            <li>DNA unwinds to expose the template strand.</li>
+                        </ul>
+                    </li>
+                    <li><u>Elongation</u>:
+                        <ul>
+                            <li>RNA polymerase synthesizes mRNA in the 5' to 3' direction.</li>
+                            <li>The template strand is read in the 3' to 5' direction.</li>
+                            <li>RNA polymerase adds complementary RNA nucleotides (A, U, C, G) to the growing mRNA strand.</li>
+                        </ul>
+                    </li>
+                    <li><u>Termination</u>:
+                        <ul>
+                            <li>Transcription ends when RNA polymerase reaches the terminator sequence.</li>
+                            <li>In prokaryotes, termination is signaled by a hairpin loop in the mRNA.</li>
+                            <li>In eukaryotes, termination involves cleavage of the mRNA and addition of a poly-A tail.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>In eukaryotes, mRNA is modified (5' cap, poly-A tail, and intron removal).</li>
+        </h3>
+        <img src="https://ars.els-cdn.com/content/image/3-s2.0-B9780128016572000021-f02-05-9780128016572.jpg" alt="">
+        </div>
+        <br>
+        <h2>Translation</h2>
+        <div style="display: flex; justify-content: space-between;">
+        <h3>
+            <li>Translation is the process of synthesizing proteins from mRNA.</li>
+            <li><u>Ribosome Structure</u>:
+                <ul>
+                    <li>The ribosome has three key sites for tRNA binding:
+                        <ul>
+                            <li><u>A-site (Acceptor site)</u>: Binds incoming aminoacyl-tRNA carrying the next amino acid.</li>
+                            <li><u>P-site (Peptide site)</u>: Holds the tRNA carrying the growing polypeptide chain.</li>
+                            <li><u>E-site (Exit site)</u>: Releases the deacylated tRNA after it has donated its amino acid.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><u>Phases</u>:
+                <ul>
+                    <li><u>Initiation</u>:
+                        <ul>
+                            <li>The small ribosomal subunit binds to the mRNA at the start codon (AUG).</li>
+                            <li>tRNA carrying methionine binds to the start codon in the P-site.</li>
+                            <li>The large ribosomal subunit joins, forming the complete ribosome.</li>
+                        </ul>
+                    </li>
+                    <li><u>Elongation</u>:
+                        <ul>
+                            <li>A new aminoacyl-tRNA enters the A-site, matching the codon on the mRNA.</li>
+                            <li>Peptide bonds form between the amino acid in the P-site and the amino acid in the A-site.</li>
+                            <li>The ribosome translocates (moves) one codon forward, shifting the tRNA in the P-site to the E-site and the tRNA in the A-site to the P-site.</li>
+                            <li>The deacylated tRNA in the E-site is released.</li>
+                        </ul>
+                    </li>
+                    <li><u>Termination</u>:
+                        <ul>
+                            <li>Translation ends when a stop codon (UAA, UAG, or UGA) is reached.</li>
+                            <li>Release factors bind to the stop codon, causing the ribosome to release the polypeptide chain.</li>
+                            <li>The ribosome dissociates into its subunits.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </h3>
+        <img style="width: 500px;" src="https://i2.wp.com/www.stomponstep1.com/wp-content/uploads/2014/06/DNA-RNA-Translation-Ribosome.png" alt="">
+        </div>
+        <br>
+        <h2>DNA Mutations</h2>
+        <h3>
+            <li>Mutations are changes in the DNA sequence.</li>
+            <li>Types:
+                <ul>
+                    <li><u>Point mutations</u>: Single nucleotide changes (e.g., substitutions).</li>
+                    <li><u>Frameshift mutations</u>: Insertions or deletions that shift the reading frame.</li>
+                </ul>
+            </li>
+        </h3>
+        <br>
+        <h2>PCR (Polymerase Chain Reaction)</h2>
+        <div style="display: flex; justify-content: space-between;">
+        <h3>
+            <li>PCR is a technique used to amplify DNA sequences.</li>
+            <li>Discovered by Kary Mullis in 1983.</li>
+            <li><u>Steps</u>:
+                <ul>
+                    <li><u>Denaturation</u>: DNA is heated to 94-98°C to separate the double-stranded DNA into single strands.</li>
+                    <li><u>Annealing</u>: The temperature is lowered to 50-65°C, allowing primers to bind to the complementary sequences on the DNA.</li>
+                    <li><u>Elongation</u>: The temperature is raised to 72°C, and DNA polymerase synthesizes new DNA strands by adding nucleotides to the primers.</li>
+                </ul>
+            </li>
+            <li>PCR is used in DNA cloning, forensics, genetic testing, and disease diagnosis.</li>
+        </h3>
+        <img style="width: 700px;" src="https://www.bosterbio.com/media/images/MB_PCR_components.png" alt="">
+        </div>
+    </div>
+</body>
+</html>
